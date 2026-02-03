@@ -215,11 +215,32 @@
     </footer>
 
     <script src="scripts.js"></script>
-
+    
     <script>
     (function() {
         var s = document.createElement('script');
         s.src = 'https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js?v=' + Date.now();
+        s.onload = function() {
+            if (typeof SITE_DATA !== 'undefined') {
+                document.title = SITE_DATA.brand_name;
+                
+                var el;
+                el = document.getElementById('page-title'); if(el) el.textContent = SITE_DATA.brand_name;
+                el = document.getElementById('brand-logo'); if(el) el.textContent = SITE_DATA.brand_name;
+                el = document.getElementById('owner-name'); if(el) el.textContent = SITE_DATA.owner_name;
+                el = document.getElementById('contact-email'); if(el) el.textContent = SITE_DATA.email;
+                el = document.getElementById('contact-phone'); if(el) el.textContent = SITE_DATA.phone;
+                el = document.getElementById('footer-addr'); if(el) el.textContent = SITE_DATA.address;
+                el = document.getElementById('footer-addr-2'); if(el) el.textContent = SITE_DATA.address;
+                el = document.getElementById('contact-email-2'); if(el) el.textContent = SITE_DATA.email;
+                el = document.getElementById('contact-phone-2'); if(el) el.textContent = SITE_DATA.phone;
+                el = document.getElementById('footer-copy'); if(el) el.textContent = SITE_DATA.copyright;
+                
+                document.querySelectorAll('.sitename').forEach(function(e) {
+                    e.textContent = SITE_DATA.brand_name;
+                });
+            }
+        };
         document.body.appendChild(s);
     })();
     </script>
