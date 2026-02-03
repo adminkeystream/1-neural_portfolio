@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ID page-title используется скриптом для смены заголовка вкладки -->
     <title id="page-title">Brand Name</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +30,6 @@
                     <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                     <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                 </svg>
-                <!-- UPD: Добавлен класс brand-name для синхронизации с админкой -->
                 <span class="logo-text brand-name" id="brand-logo">BRAND</span>
             </a>
             
@@ -55,7 +53,6 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <!-- UPD: Добавлен класс brand-name -->
             <h1 class="glitch brand-name" data-text="DIGITAL STUDIO" id="hero-title">DIGITAL STUDIO</h1>
             <p class="subtitle">Web Development & Design Solutions</p>
         </div>
@@ -74,7 +71,6 @@
             <div class="about-image">
                 <div class="profile-img-wrapper">
                     <div class="profile-img">
-                        <!-- UPD: Класс brand-name, чтобы лого менялось на инициалы или имя -->
                         <span class="brand-name">AG</span>
                     </div>
                 </div>
@@ -159,12 +155,10 @@
             </p>
             <p style="font-size: 1.2rem; margin-bottom: 15px;">
                 <strong style="color: var(--primary);">Email:</strong> 
-                <!-- UPD: Добавлен класс contact-email на случай дублирования -->
                 <a href="#" id="contact-email" class="contact-email" style="color: inherit; text-decoration: none;">info@example.com</a>
             </p>
             <p style="font-size: 1.2rem; margin-bottom: 15px;">
                 <strong style="color: var(--primary);">Phone:</strong> 
-                <!-- UPD: Добавлен класс contact-phone -->
                 <a href="#" id="contact-phone" class="contact-phone" style="color: inherit; text-decoration: none;">+1 234 567 890</a>
             </p>
             <p style="font-size: 1.2rem;">
@@ -227,9 +221,6 @@
     </footer>
 
     <script src="scripts.js"></script>
-    
-    <!-- CMS LOADER: БЕЗОПАСНАЯ АСИНХРОННАЯ ЗАГРУЗКА -->
-    <!-- Убедитесь, что вы обновили JS файл в админке плагина! -->
     <script>
         (function() {
             var script = document.createElement('script');
