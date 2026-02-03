@@ -228,10 +228,14 @@
 
     <script src="scripts.js"></script>
     
-    <!-- CMS LOADER: СИНХРОННАЯ ЗАГРУЗКА (решает проблему race condition) -->
-    <!-- Используем document.write, чтобы браузер дождался скрипта так же, как обычного тега <script> -->
+    <!-- CMS LOADER: БЕЗОПАСНАЯ АСИНХРОННАЯ ЗАГРУЗКА -->
+    <!-- Убедитесь, что вы обновили JS файл в админке плагина! -->
     <script>
-        document.write('<script src="https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js?t=' + new Date().getTime() + '"><\/script>');
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js?t=' + new Date().getTime();
+            document.head.appendChild(script);
+        })();
     </script>
 </body>
 </html>
