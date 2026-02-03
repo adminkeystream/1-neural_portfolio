@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ID page-title уже есть, скрипт его найдет и обновит -->
     <title id="page-title">Brand Name</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +17,27 @@
         <div class="nav-container">
             <a href="#home" class="logo-container">
                 <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Neural Network Logo -->
                     <circle cx="50" cy="20" r="8" fill="none" stroke="#00ffff" stroke-width="2"/>
                     <circle cx="25" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
                     <circle cx="75" cy="50" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
                     <circle cx="50" cy="80" r="8" fill="none" stroke="#ffff00" stroke-width="2"/>
+                    
+                    <!-- Connections -->
                     <line x1="50" y1="28" x2="25" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
                     <line x1="50" y1="28" x2="75" y2="42" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
                     <line x1="25" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                     <line x1="75" y1="58" x2="50" y2="72" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
+                    
+                    <!-- Center node -->
                     <circle cx="50" cy="50" r="5" fill="#00ffff"/>
                     <line x1="50" y1="28" x2="50" y2="45" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
                     <line x1="50" y1="55" x2="50" y2="72" stroke="#ffff00" stroke-width="1" opacity="0.6"/>
                     <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                     <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                 </svg>
-                <span class="logo-text" id="brand-logo">BRAND</span>
+                <!-- Добавлен класс brand-name, чтобы скрипт менял название бренда -->
+                <span class="logo-text brand-name">NEURAL</span>
             </a>
             
             <div class="mobile-menu-toggle" id="mobile-toggle">
@@ -53,8 +60,8 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="glitch" data-text="DIGITAL STUDIO" id="hero-title">DIGITAL STUDIO</h1>
-            <p class="subtitle">Web Development & Design Solutions</p>
+            <h1 class="glitch" data-text="NEURAL NETWORK">NEURAL NETWORK</h1>
+            <p class="subtitle">Web Developer & Digital Architect</p>
         </div>
         <a href="#about" class="scroll-btn">
             <div class="scroll-btn-inner">
@@ -66,25 +73,26 @@
     </section>
 
     <section id="about" class="fade-in">
-        <h2 class="section-title">ABOUT US</h2>
+        <h2 class="section-title">ABOUT ME</h2>
         <div class="about-container">
             <div class="about-image">
                 <div class="profile-img-wrapper">
                     <div class="profile-img">
-                        <span>AG</span>
+                        <span>AI</span>
                     </div>
                 </div>
             </div>
             <div class="about-content">
                 <h3>Crafting Digital Experiences</h3>
                 <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
-                    We are a passionate team specializing in creating cutting-edge digital experiences 
-                    that merge art with technology. Our work focuses on building modern 
+                    I'm a passionate web developer specializing in creating cutting-edge digital experiences 
+                    that merge art with technology. My work focuses on building neural network-inspired 
                     interfaces that push the boundaries of web design.
                 </p>
                 <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
-                    With years of experience in frontend development, we've mastered the art of 
-                    transforming complex ideas into intuitive, visually stunning web applications.
+                    With over 5 years of experience in frontend development, I've mastered the art of 
+                    transforming complex ideas into intuitive, visually stunning web applications. 
+                    My expertise spans from responsive design to advanced animations and WebGL implementations.
                 </p>
                 <div class="about-stats">
                     <div class="stat-card">
@@ -108,28 +116,28 @@
         <h2 class="section-title">PROJECTS</h2>
         <div class="projects-grid">
             <div class="glass-card project-card">
-                <h3 style="color: var(--primary);">Web Applications</h3>
-                <p style="color: var(--text-secondary);">Custom web applications with modern technologies and responsive design</p>
+                <h3 style="color: var(--primary);">AI Dashboard</h3>
+                <p style="color: var(--text-secondary);">Real-time analytics with neural network visualizations and predictive modeling</p>
             </div>
             <div class="glass-card project-card">
-                <h3 style="color: var(--secondary);">E-Commerce</h3>
-                <p style="color: var(--text-secondary);">Online stores with secure payment integration and inventory management</p>
+                <h3 style="color: var(--secondary);">Quantum UI</h3>
+                <p style="color: var(--text-secondary);">Experimental interface system inspired by quantum computing principles</p>
             </div>
             <div class="glass-card project-card">
-                <h3 style="color: var(--accent);">Corporate Sites</h3>
-                <p style="color: var(--text-secondary);">Professional business websites with modern design and CMS integration</p>
+                <h3 style="color: var(--accent);">Cyber Portal</h3>
+                <p style="color: var(--text-secondary);">Immersive web experience with advanced WebGL and Three.js effects</p>
             </div>
             <div class="glass-card project-card">
-                <h3 style="color: var(--primary);">Landing Pages</h3>
-                <p style="color: var(--text-secondary);">High-converting landing pages optimized for marketing campaigns</p>
+                <h3 style="color: var(--primary);">Data Stream</h3>
+                <p style="color: var(--text-secondary);">Live data visualization platform with real-time streaming capabilities</p>
             </div>
             <div class="glass-card project-card">
-                <h3 style="color: var(--secondary);">UI/UX Design</h3>
-                <p style="color: var(--text-secondary);">User interface design with focus on user experience and accessibility</p>
+                <h3 style="color: var(--secondary);">Neon Grid</h3>
+                <p style="color: var(--text-secondary);">Cyberpunk-themed design system with glowing components and animations</p>
             </div>
             <div class="glass-card project-card">
-                <h3 style="color: var(--accent);">Mobile Apps</h3>
-                <p style="color: var(--text-secondary);">Cross-platform mobile applications with native performance</p>
+                <h3 style="color: var(--accent);">Matrix View</h3>
+                <p style="color: var(--text-secondary);">3D data exploration tool with virtual reality integration support</p>
             </div>
         </div>
     </section>
@@ -137,34 +145,34 @@
     <section id="skills" class="fade-in">
         <h2 class="section-title">SKILLS</h2>
         <div class="skills-container">
-            <div class="skill-node"><span>HTML5</span></div>
-            <div class="skill-node"><span>CSS3</span></div>
-            <div class="skill-node"><span>JavaScript</span></div>
-            <div class="skill-node"><span>React</span></div>
-            <div class="skill-node"><span>Node.js</span></div>
-            <div class="skill-node"><span>Python</span></div>
+            <div class="skill-node">
+                <span>HTML5</span>
+            </div>
+            <div class="skill-node">
+                <span>CSS3</span>
+            </div>
+            <div class="skill-node">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-node">
+                <span>React</span>
+            </div>
+            <div class="skill-node">
+                <span>WebGL</span>
+            </div>
+            <div class="skill-node">
+                <span>Three.js</span>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="fade-in">
         <h2 class="section-title">CONTACT</h2>
         
-        <div class="contact-info glass-card" style="text-align: center; padding: 40px; margin-bottom: 30px;">
-            <p style="font-size: 1.2rem; margin-bottom: 15px;">
-                <strong style="color: var(--primary);">Contact Person:</strong> <span id="owner-name">Owner Name</span>
-            </p>
-            <p style="font-size: 1.2rem; margin-bottom: 15px;">
-                <strong style="color: var(--primary);">Email:</strong> <span id="contact-email">info@example.com</span>
-            </p>
-            <p style="font-size: 1.2rem; margin-bottom: 15px;">
-                <strong style="color: var(--primary);">Phone:</strong> <span id="contact-phone">+1 234 567 890</span>
-            </p>
-            <p style="font-size: 1.2rem;">
-                <strong style="color: var(--primary);">Address:</strong> <span id="footer-addr">Address</span>
-            </p>
-        </div>
+        <!-- Опционально: Добавьте сюда блок с контактами, если нужно отображать телефон и email
+             Сейчас здесь только форма -->
         
-        <form class="contact-form glass-card" onsubmit="return false;">
+        <form class="contact-form glass-card">
             <div class="form-group">
                 <input type="text" placeholder="Your Name" required>
             </div>
@@ -202,27 +210,31 @@
             </div>
             
             <div class="footer-section">
-                <h3>Contact Info</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 5px;" id="footer-addr-2">Address</p>
-                <p style="color: var(--text-secondary); margin-bottom: 5px;" id="contact-email-2">info@example.com</p>
-                <p style="color: var(--text-secondary);" id="contact-phone-2">+1 234 567 890</p>
+                <h3>Connect</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 10px;">
+                    Let's build something amazing together
+                </p>
+                
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p id="footer-copy">&copy; 2026 Brand Name. All Rights Reserved.</p>
+            <!-- Добавлен класс footer-copy для авто-обновления копирайта -->
+            <p class="footer-copy">&copy; 2048 Neural Network Portfolio. All rights reserved. </p>
         </div>
     </footer>
 
+    <!-- Основные скрипты сайта -->
     <script src="scripts.js"></script>
+
+    <!-- CMS LOADER: Динамическая загрузка конфига с обходом кэша -->
     <script>
     (function() {
-    var script = document.createElement('script');
-    // Добавляем timestamp (?t=...), чтобы браузер думал, что это каждый раз новый файл
-    // Это гарантирует, что телефон/почта обновятся мгновенно после нажатия кнопки в плагине
-    script.src = 'https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js?t=' + new Date().getTime();
-    document.head.appendChild(script);
-})();
-</script>
+        var script = document.createElement('script');
+        // Добавляем timestamp (?t=...), чтобы браузер всегда грузил свежую версию
+        script.src = 'https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js?t=' + new Date().getTime();
+        document.head.appendChild(script);
+    })();
+    </script>
 </body>
 </html>
