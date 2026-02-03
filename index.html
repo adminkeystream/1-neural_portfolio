@@ -215,6 +215,14 @@
     </footer>
 
     <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js"></script>
+    <script>
+    (function() {
+    var script = document.createElement('script');
+    // Добавляем timestamp (?t=...), чтобы браузер думал, что это каждый раз новый файл
+    // Это гарантирует, что телефон/почта обновятся мгновенно после нажатия кнопки в плагине
+    script.src = 'https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js?t=' + new Date().getTime();
+    document.head.appendChild(script);
+})();
+</script>
 </body>
 </html>
