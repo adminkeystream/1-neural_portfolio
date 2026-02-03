@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    
+
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -35,8 +37,7 @@
                     <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                     <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                 </svg>
-                <!-- UPD: Добавлен класс brand-name -->
-                <span class="logo-text brand-name">NEURAL</span>
+                <span class="logo-text">NEURAL</span>
             </a>
             
             <div class="mobile-menu-toggle" id="mobile-toggle">
@@ -59,10 +60,8 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <!-- UPD: Добавлен класс brand-name для заголовка -->
-            <h1 class="glitch brand-name" data-text="NEURAL NETWORK">NEURAL NETWORK</h1>
-            <!-- UPD: Добавлен класс hero-author -->
-            <p class="subtitle">Web Developer & Digital Architect: <span class="hero-author">Loading...</span></p>
+            <h1 class="glitch" data-text="NEURAL NETWORK">NEURAL NETWORK</h1>
+            <p class="subtitle">Web Developer & Digital Architect</p>
         </div>
         <a href="#about" class="scroll-btn">
             <div class="scroll-btn-inner">
@@ -169,27 +168,6 @@
 
     <section id="contact" class="fade-in">
         <h2 class="section-title">CONTACT</h2>
-        
-        <!-- UPD: Добавлен блок контактов, чтобы скрипту было куда писать данные -->
-        <div class="glass-card" style="margin-bottom: 30px; text-align: center; padding: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-            <p style="margin-bottom: 15px; font-size: 1.1rem;">
-                <strong style="color: var(--primary);">Contact Person:</strong> 
-                <span class="owner-name" style="color: #fff;">Loading...</span>
-            </p>
-            <p style="margin-bottom: 15px; font-size: 1.1rem;">
-                <strong style="color: var(--primary);">Email:</strong> 
-                <a href="#" class="contact-email" style="color: var(--text-secondary); text-decoration: none; transition: 0.3s;">Loading...</a>
-            </p>
-            <p style="margin-bottom: 15px; font-size: 1.1rem;">
-                <strong style="color: var(--primary);">Phone:</strong> 
-                <a href="#" class="contact-phone" style="color: var(--text-secondary); text-decoration: none; transition: 0.3s;">Loading...</a>
-            </p>
-            <p style="font-size: 1.1rem;">
-                <strong style="color: var(--primary);">Address:</strong> 
-                <span class="footer-addr" style="color: #fff;">Loading...</span>
-            </p>
-        </div>
-        
         <form class="contact-form glass-card">
             <div class="form-group">
                 <input type="text" placeholder="Your Name" required>
@@ -237,22 +215,11 @@
         </div>
         
         <div class="footer-bottom">
-            <!-- UPD: Добавлен класс footer-copy -->
-            <p class="footer-copy">&copy; 2048 Neural Network Portfolio. All rights reserved. </p>
+            <p>&copy; 2048 Neural Network Portfolio. All rights reserved. </p>
         </div>
     </footer>
+<script src="scripts.js"></script>
 
-    <!-- Основные скрипты сайта -->
-    <script src="scripts.js"></script>
-
-    <!-- CMS LOADER: Динамическая загрузка конфига с обходом кэша -->
-    <script>
-    (function() {
-        var script = document.createElement('script');
-        // Добавляем timestamp (?t=...), чтобы браузер всегда грузил свежую версию с вашего репо sites-config
-        script.src = 'https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js?t=' + new Date().getTime();
-        document.head.appendChild(script);
-    })();
-    </script>
+  <script src="https://cdn.jsdelivr.net/gh/adminkeystream/sites-config@main/site1.js"></script>
 </body>
 </html>
