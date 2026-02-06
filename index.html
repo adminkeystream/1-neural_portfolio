@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ID page-title нужен для config.js, чтобы менять заголовок вкладки -->
     <title id="page-title">Digital Studio</title>
+    
+    <!-- FAVICON: Генерируемый SVG логотип (Cyan круг в стиле дизайна) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22none%22 stroke=%22%2300ffff%22 stroke-width=%2210%22/><circle cx=%2250%22 cy=%2250%22 r=%2220%22 fill=%22%23ff00ff%22/></svg>" type="image/svg+xml">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <script src="config.js"></script>
+    
+    <!-- CSS тоже можно загружать с версией для сброса кэша стилей -->
+    <script>
+        document.write('<link href="style.css?v=' + new Date().getTime() + '" rel="stylesheet">');
+    </script>
+    
+    <!-- ANTI-CACHE LOADER для config.js -->
+    <!-- Этот скрипт добавляет текущее время к запросу файла, заставляя браузер загружать новую версию всегда -->
+    <script>
+        (function() {
+            var script = document.createElement('script');
+            // Добавляем timestamp (?v=...) чтобы обойти кэш браузера
+            script.src = 'config.js?v=' + new Date().getTime();
+            document.head.appendChild(script);
+        })();
+    </script>
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -208,6 +227,13 @@
         </div>
     </footer>
     
-    <script src="scripts.js"></script>
+    <!-- Кэш скриптов тоже можно сбрасывать -->
+    <script>
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'scripts.js?v=' + new Date().getTime();
+            document.body.appendChild(script);
+        })();
+    </script>
 </body>
 </html>
