@@ -1,16 +1,16 @@
 (function() {
     const DATA = {
-        brand: "Brand Name",
+        brand: "Digital Studio",
         owner: "Owner Name",
         email: "info@example.com",
         phone: "+1 234 567 890",
         phoneClean: "+1234567890",
-        address: "Address",
-        copyright: "(c) 2026 Brand Name. All Rights Reserved."
+        address: "Address City",
+        copyright: "(c) 2026 Digital Studio. All Rights Reserved."
     };
 
     function apply() {
-        document.title = DATA.brand;
+        if(document.title) document.title = DATA.brand;
         
         const ids = {
             'page-title': DATA.brand,
@@ -36,6 +36,7 @@
         
         document.querySelectorAll('.sitename').forEach(el => {
             el.textContent = DATA.brand;
+            if(el.setAttribute) el.setAttribute('data-text', DATA.brand);
         });
         
         document.querySelectorAll('.contact-email').forEach(el => {
