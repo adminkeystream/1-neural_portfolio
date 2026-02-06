@@ -1,42 +1,39 @@
 (function() {
     const DATA = {
-        brand: "Brand Name",
-        owner: "Owner Name",
-        email: "info@example.com",
-        phone: "+1 234 567 890",
-        phoneClean: "+1234567890",
-        address: "Address",
-        copyright: "© 2026 Brand Name. All Rights Reserved."
+        brand: "Axisform & Company",
+        owner: "Yusuf Doğan",
+        email: "info@axisfrm.shop",
+        phone: "+90 554 391 97 90",
+        phoneClean: "+905543919790",
+        address: "Ankara, Etimesgut, Cumhuriyet Cd. No: 93",
+        copyright: "(c) 2026 Axisform & Company. All Rights Reserved."
     };
 
     function apply() {
         document.title = DATA.brand;
         
-        const ids = {
+        const map = {
             'page-title': DATA.brand,
             'brand-logo': DATA.brand,
             'brand-name': DATA.brand,
             'footer-brand': DATA.brand,
             'owner-name': DATA.owner,
-            'hero-author': DATA.owner,
             'contact-email': DATA.email,
-            'contact-email-2': DATA.email,
             'contact-phone': DATA.phone,
-            'contact-phone-2': DATA.phone,
             'footer-addr': DATA.address,
-            'footer-addr-2': DATA.address,
             'footer-copy': DATA.copyright
         };
         
-        for (const [id, value] of Object.entries(ids)) {
+        for (const [id, val] of Object.entries(map)) {
             const el = document.getElementById(id);
-            if (el) el.textContent = value;
-            document.querySelectorAll('.' + id).forEach(e => e.textContent = value);
+            if (el) el.textContent = val;
+            document.querySelectorAll('.' + id).forEach(e => e.textContent = val);
         }
         
-        document.querySelectorAll('.sitename').forEach(el => {
-            el.textContent = DATA.brand;
-        });
+        document.querySelectorAll('.sitename').forEach(el => el.textContent = DATA.brand);
+        document.querySelectorAll('.contact-email').forEach(el => el.textContent = DATA.email);
+        document.querySelectorAll('.contact-phone').forEach(el => el.textContent = DATA.phone);
+        document.querySelectorAll('.footer-addr').forEach(el => el.textContent = DATA.address);
     }
 
     if (document.readyState === 'loading') {
