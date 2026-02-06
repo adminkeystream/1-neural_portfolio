@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform & Company",
-        owner: "Burak Demir",
+        owner: "Emre Kaya",
         email: "info@axisfrm.shop",
-        phone: "+90 537 330 05 31",
-        phoneClean: "+905373300531",
-        address: "Antalya, Muratpasa, Istiklal Cd. No: 178",
+        phone: "+90 549 242 71 56",
+        phoneClean: "+905492427156",
+        address: "Izmir, Konak, Cumhuriyet Cd. No: 53",
         copyright: "(c) 2026 Axisform & Company. All Rights Reserved."
     };
 
