@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ID page-title нужен для config.js, чтобы менять заголовок вкладки -->
+
     <title id="page-title">Digital Studio</title>
     
-    <!-- FAVICON: Генерируемый SVG логотип (Cyan круг в стиле дизайна) -->
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22none%22 stroke=%22%2300ffff%22 stroke-width=%2210%22/><circle cx=%2250%22 cy=%2250%22 r=%2220%22 fill=%22%23ff00ff%22/></svg>" type="image/svg+xml">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
     
-    <!-- CSS тоже можно загружать с версией для сброса кэша стилей -->
-    <script>
-        document.write('<link href="style.css?v=' + new Date().getTime() + '" rel="stylesheet">');
-    </script>
-    
-    <!-- ANTI-CACHE LOADER для config.js -->
-    <!-- Этот скрипт добавляет текущее время к запросу файла, заставляя браузер загружать новую версию всегда -->
     <script>
         (function() {
-            var script = document.createElement('script');
-            // Добавляем timestamp (?v=...) чтобы обойти кэш браузера
-            script.src = 'config.js?v=' + new Date().getTime();
-            document.head.appendChild(script);
+            var version = new Date().getTime();
+            
+            var cssLink = document.createElement('link');
+            cssLink.rel = 'stylesheet';
+            cssLink.href = 'style.css?v=' + version;
+            document.head.appendChild(cssLink);
+            
+            var scriptConfig = document.createElement('script');
+            scriptConfig.src = 'config.js?v=' + version;
+            scriptConfig.async = false; 
+            document.head.appendChild(scriptConfig);
         })();
     </script>
+    
+    <style>
+        body { opacity: 0; transition: opacity 0.3s ease; }
+    </style>
 </head>
-<body>
+<body onload="document.body.style.opacity='1'"> 
+
     <canvas id="neural-bg"></canvas>
 
     <nav id="navbar">
@@ -71,7 +76,7 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="glitch sitename" data-text="DIGITAL STUDIO">DIGITAL STUDIO</h1>
+            <h1 class="glitch sitename" data-text="DIGITAL STUDIO" style="display: block;">DIGITAL STUDIO</h1>
             <p class="subtitle">Web Development & Design Solutions</p>
         </div>
         <a href="#about" class="scroll-btn">
@@ -227,12 +232,11 @@
         </div>
     </footer>
     
-    <!-- Кэш скриптов тоже можно сбрасывать -->
     <script>
         (function() {
-            var script = document.createElement('script');
-            script.src = 'scripts.js?v=' + new Date().getTime();
-            document.body.appendChild(script);
+            var scriptMain = document.createElement('script');
+            scriptMain.src = 'scripts.js?v=' + new Date().getTime();
+            document.body.appendChild(scriptMain);
         })();
     </script>
 </body>
