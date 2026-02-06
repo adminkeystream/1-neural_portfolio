@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform Creative",
-        owner: "Ali Sahin",
+        owner: "Ahmet Yilmaz",
         email: "info@axisform.shop",
-        phone: "+90 556 921 44 02",
-        phoneClean: "+905569214402",
-        address: "Ankara, Kecioren, Cumhuriyet Cd. No: 87",
+        phone: "+90 543 776 44 12",
+        phoneClean: "+905437764412",
+        address: "Istanbul, Uskudar, Ataturk Cd. No: 53",
         copyright: "(c) 2026 Axisform Creative. All Rights Reserved."
     };
 
