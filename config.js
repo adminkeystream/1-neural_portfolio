@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform & Company",
-        owner: "Ahmet Celik",
+        owner: "Burak Ozturk",
         email: "info@axisfrm.shop",
-        phone: "+90 549 750 32 59",
-        phoneClean: "+905497503259",
-        address: "Izmir, Konak, Cumhuriyet Cd. No: 3",
+        phone: "+90 553 380 14 06",
+        phoneClean: "+905533801406",
+        address: "Izmir, Bornova, Cumhuriyet Cd. No: 81",
         copyright: "(c) 2026 Axisform & Company. All Rights Reserved."
     };
 
