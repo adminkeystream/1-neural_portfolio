@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform & Company",
-        owner: "Yusuf Doğan",
+        owner: "Burak Demir",
         email: "info@axisfrm.shop",
-        phone: "+90 554 391 97 90",
-        phoneClean: "+905543919790",
-        address: "Ankara, Etimesgut, Cumhuriyet Cd. No: 93",
+        phone: "+90 537 330 05 31",
+        phoneClean: "+905373300531",
+        address: "Antalya, Muratpasa, Istiklal Cd. No: 178",
         copyright: "(c) 2026 Axisform & Company. All Rights Reserved."
     };
 
