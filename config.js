@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform & Company",
-        owner: "Fatih Yildiz",
+        owner: "Ali Sahin",
         email: "info@axisfrm.shop",
-        phone: "+90 545 574 57 54",
-        phoneClean: "+905455745754",
-        address: "Ankara, Cankaya, Istiklal Cd. No: 48",
+        phone: "+90 556 921 44 02",
+        phoneClean: "+905569214402",
+        address: "Ankara, Kecioren, Cumhuriyet Cd. No: 87",
         copyright: "(c) 2026 Axisform & Company. All Rights Reserved."
     };
 
