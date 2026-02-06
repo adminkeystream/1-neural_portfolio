@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Brand Name</title>
+    <title id="page-title">Digital Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="config.js"></script>
 </head>
 <body>
     <canvas id="neural-bg"></canvas>
@@ -30,7 +31,7 @@
                     <line x1="33" y1="50" x2="45" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                     <line x1="55" y1="50" x2="67" y2="50" stroke="#ff00ff" stroke-width="1" opacity="0.6"/>
                 </svg>
-                <span class="logo-text" id="brand-logo">BRAND</span>
+                <span class="logo-text" id="brand-logo">DIGITAL</span>
             </a>
             <div class="mobile-menu-toggle" id="mobile-toggle">
                 <span></span>
@@ -51,7 +52,7 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="glitch" data-text="DIGITAL STUDIO">DIGITAL STUDIO</h1>
+            <h1 class="glitch sitename" data-text="DIGITAL STUDIO">DIGITAL STUDIO</h1>
             <p class="subtitle">Web Development & Design Solutions</p>
         </div>
         <a href="#about" class="scroll-btn">
@@ -69,7 +70,7 @@
             <div class="about-image">
                 <div class="profile-img-wrapper">
                     <div class="profile-img">
-                        <span>AG</span>
+                        <span>DS</span>
                     </div>
                 </div>
             </div>
@@ -81,8 +82,8 @@
                     interfaces that push the boundaries of web design.
                 </p>
                 <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
-                    With years of experience in frontend development, we've mastered the art of 
-                    transforming complex ideas into intuitive, visually stunning web applications.
+                    With years of experience in development, we've mastered the art of 
+                    transforming complex ideas into intuitive, visually stunning applications.
                 </p>
                 <div class="about-stats">
                     <div class="stat-card">
@@ -148,16 +149,16 @@
         <h2 class="section-title">CONTACT</h2>
         <div class="contact-info glass-card" style="text-align: center; padding: 40px; margin-bottom: 30px;">
             <p style="font-size: 1.2rem; margin-bottom: 15px;">
-                <strong style="color: var(--primary);">Owner:</strong> <span id="owner-name">Owner Name</span>
+                <strong style="color: var(--primary);">Owner:</strong> <span id="owner-name">Company Owner</span>
             </p>
             <p style="font-size: 1.2rem; margin-bottom: 15px;">
-                <strong style="color: var(--primary);">Email:</strong> <span id="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b52555d547b5e435a564b575e15585456">[email&#160;protected]</a></span>
+                <strong style="color: var(--primary);">Email:</strong> <span id="contact-email" class="contact-email">info@example.com</span>
             </p>
             <p style="font-size: 1.2rem; margin-bottom: 15px;">
-                <strong style="color: var(--primary);">Phone:</strong> <span id="contact-phone">+1 234 567 890</span>
+                <strong style="color: var(--primary);">Phone:</strong> <span id="contact-phone" class="contact-phone">+1 234 567 890</span>
             </p>
             <p style="font-size: 1.2rem;">
-                <strong style="color: var(--primary);">Address:</strong> <span id="footer-addr">Address</span>
+                <strong style="color: var(--primary);">Address:</strong> <span id="footer-addr" class="footer-addr">Local Address</span>
             </p>
         </div>
         <form class="contact-form glass-card" onsubmit="return false;">
@@ -198,8 +199,15 @@
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <p style="color: var(--text-secondary); margin-bottom: 5px;" class="footer-addr">Address</p>
-                <p style="color: var(--text-secondary); margin-bottom: 5px;" class="contact-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6801060e07280d10090518040d460b0705">[email&#160;protected]</a></p>
+                <p style="color: var(--text-secondary); margin-bottom: 5px;" class="contact-email">info@example.com</p>
                 <p style="color: var(--text-secondary);" class="contact-phone">+1 234 567 890</p>
             </div>
         </div>
-  
+        <div class="footer-bottom">
+            <p id="footer-copy">(c) 2026 Digital Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
