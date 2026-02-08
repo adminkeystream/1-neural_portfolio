@@ -1,12 +1,12 @@
 (function() {
     const DATA = {
-        brand: "Axisform Creative",
-        owner: "Ahmet Yilmaz",
-        email: "info@axisform.shop",
-        phone: "+90 543 776 44 12",
-        phoneClean: "+905437764412",
-        address: "Istanbul, Uskudar, Ataturk Cd. No: 53",
-        copyright: "(c) 2026 Axisform Creative. All Rights Reserved."
+        brand: "Axisform Design group",
+        owner: "Burak Kaya",
+        email: "info@axform.shop",
+        phone: "+90 534 737 48 41",
+        phoneClean: "+905347374841",
+        address: "Istanbul, Uskudar, Cumhuriyet Cd. No: 124",
+        copyright: "(c) 2026 Axisform Design group. All Rights Reserved."
     };
 
     function apply() {
