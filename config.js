@@ -1,12 +1,12 @@
 (function() {
     const DATA = {
-        brand: "Axisform International Studio",
-        owner: "Murat Kaya",
-        email: "info@axisform.site",
-        phone: "+90 545 985 37 98",
-        phoneClean: "+905459853798",
-        address: "Bursa, Osmangazi, Istiklal Cd. No: 142",
-        copyright: "(c) 2026 Axisform International Studio. All Rights Reserved."
+        brand: "Axisform Creative Lab",
+        owner: "Mehmet Yilmaz",
+        email: "info@axisform.website",
+        phone: "+90 542 335 77 55",
+        phoneClean: "+905423357755",
+        address: "Izmir, Konak, Ataturk Cd. No: 38",
+        copyright: "(c) 2026 Axisform Creative Lab. All Rights Reserved."
     };
 
     function apply() {
