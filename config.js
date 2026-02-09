@@ -1,12 +1,12 @@
 (function() {
     const DATA = {
-        brand: "Axisform & Co",
-        owner: "Ahmet Sahin",
-        email: "info@axisform.space",
-        phone: "+90 540 144 03 92",
-        phoneClean: "+905401440392",
-        address: "Istanbul, Kadikoy, Ataturk Cd. No: 122",
-        copyright: "(c) 2026 Axisform & Co. All Rights Reserved."
+        brand: "Axisform International Studio",
+        owner: "Emre Celik",
+        email: "info@axisform.site",
+        phone: "+90 556 263 58 39",
+        phoneClean: "+905562635839",
+        address: "Ankara, Cankaya, Ataturk Cd. No: 6",
+        copyright: "(c) 2026 Axisform International Studio. All Rights Reserved."
     };
 
     function apply() {
