@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform & Co",
-        owner: "Mustafa Ozturk",
+        owner: "Ahmet Sahin",
         email: "info@axisform.space",
-        phone: "+90 544 559 79 35",
-        phoneClean: "+905445597935",
-        address: "Bursa, Nilufer, Ataturk Cd. No: 93",
+        phone: "+90 540 144 03 92",
+        phoneClean: "+905401440392",
+        address: "Istanbul, Kadikoy, Ataturk Cd. No: 122",
         copyright: "(c) 2026 Axisform & Co. All Rights Reserved."
     };
 
