@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform International Studio",
-        owner: "Emre Celik",
+        owner: "Murat Kaya",
         email: "info@axisform.site",
-        phone: "+90 556 263 58 39",
-        phoneClean: "+905562635839",
-        address: "Ankara, Cankaya, Ataturk Cd. No: 6",
+        phone: "+90 545 985 37 98",
+        phoneClean: "+905459853798",
+        address: "Bursa, Osmangazi, Istiklal Cd. No: 142",
         copyright: "(c) 2026 Axisform International Studio. All Rights Reserved."
     };
 
