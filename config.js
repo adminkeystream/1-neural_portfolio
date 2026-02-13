@@ -2,7 +2,7 @@
     const DATA = {
         brand: "Axisform Creative Lab",
         owner: "Mehmet Yilmaz",
-        email: "info@axisform.website",
+        email: "art@axisform.website",
         phone: "+90 542 335 77 55",
         phoneClean: "+905423357755",
         address: "Izmir, Konak, Ataturk Cd. No: 38",
