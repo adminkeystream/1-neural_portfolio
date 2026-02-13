@@ -1,12 +1,12 @@
 (function() {
     const DATA = {
-        brand: "Axisform Creative Lab",
-        owner: "Fatih Demir",
-        email: "art@axisform.website",
-        phone: "+90 551 591 47 81",
-        phoneClean: "+905515914781",
-        address: "Izmir, Karsiyaka, Istiklal Cd. No: 38",
-        copyright: "(c) 2026 Axisform Creative Lab. All Rights Reserved."
+        brand: "Atelier Ginkgo Studio",
+        owner: "Mustafa Sahin",
+        email: "art@atelierginkgo.shop",
+        phone: "+90 535 173 18 79",
+        phoneClean: "+905351731879",
+        address: "Istanbul, Uskudar, Cumhuriyet Cd. No: 92",
+        copyright: "(c) 2026 Atelier Ginkgo Studio. All Rights Reserved."
     };
 
     function apply() {
