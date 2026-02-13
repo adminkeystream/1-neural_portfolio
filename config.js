@@ -1,12 +1,12 @@
 (function() {
     const DATA = {
-        brand: "Atelier Ginkgo Studio",
-        owner: "Mustafa Sahin",
-        email: "art@atelierginkgo.shop",
-        phone: "+90 535 173 18 79",
-        phoneClean: "+905351731879",
-        address: "Istanbul, Uskudar, Cumhuriyet Cd. No: 92",
-        copyright: "(c) 2026 Atelier Ginkgo Studio. All Rights Reserved."
+        brand: "Axisform Creative Lab",
+        owner: "Mehmet Yilmaz",
+        email: "info@axisform.website",
+        phone: "+90 542 335 77 55",
+        phoneClean: "+905423357755",
+        address: "Izmir, Konak, Ataturk Cd. No: 38",
+        copyright: "(c) 2026 Axisform Creative Lab. All Rights Reserved."
     };
 
     function apply() {
