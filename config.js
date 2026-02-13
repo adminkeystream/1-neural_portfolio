@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform Creative Lab",
-        owner: "Mehmet Yilmaz",
+        owner: "Fatih Demir",
         email: "art@axisform.website",
-        phone: "+90 542 335 77 55",
-        phoneClean: "+905423357755",
-        address: "Izmir, Konak, Ataturk Cd. No: 38",
+        phone: "+90 551 591 47 81",
+        phoneClean: "+905515914781",
+        address: "Izmir, Karsiyaka, Istiklal Cd. No: 38",
         copyright: "(c) 2026 Axisform Creative Lab. All Rights Reserved."
     };
 
