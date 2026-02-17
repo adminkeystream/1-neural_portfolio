@@ -1,11 +1,11 @@
 (function() {
     const DATA = {
         brand: "Axisform Creative Lab",
-        owner: "Mehmet Yilmaz",
-        email: "info@axisform.website",
-        phone: "+90 542 335 77 55",
-        phoneClean: "+905423357755",
-        address: "Izmir, Konak, Ataturk Cd. No: 38",
+        owner: "Igor Voitrek",
+        email: "team@axisform.website",
+        phone: "+49 4237 3803814",
+        phoneClean: "+4942373803814",
+        address: "Lower Saxony, Stade, Heidbeck 8",
         copyright: "(c) 2026 Axisform Creative Lab. All Rights Reserved."
     };
 
